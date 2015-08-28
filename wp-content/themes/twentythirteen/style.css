@@ -884,13 +884,13 @@ div.nav-menu > ul {
 .nav-menu li a:hover,
 .nav-menu li:focus > a,
 .nav-menu li a:focus {
-	background-color: #220e10;
+	background-color: #696969;
 	color: #fff;
 }
 
 .nav-menu .sub-menu,
 .nav-menu .children {
-	background-color: #220e10;
+	background-color: #303030;
 	border: 2px solid #f7f5e7;
 	border-top: 0;
 	padding: 0;
@@ -921,7 +921,7 @@ ul.nav-menu ul a:hover,
 .nav-menu ul ul a:hover,
 ul.nav-menu ul a:focus,
 .nav-menu ul ul a:focus {
-	background-color: #db572f;
+	background-color: #696969;
 }
 
 ul.nav-menu li:hover > ul,
@@ -938,8 +938,8 @@ ul.nav-menu .focus > ul,
 .nav-menu .current_page_ancestor > a,
 .nav-menu .current-menu-item > a,
 .nav-menu .current-menu-ancestor > a {
-	color: #bc360a;
-	font-style: italic;
+    font-weight: bold;
+    background: #ff9933;
 }
 
 .menu-toggle {
@@ -2876,7 +2876,7 @@ footer.entry-meta {
 	.menu-toggle:active {
 		background: none;
 		border: none;
-		color: #141412;
+		color: #000;
 		padding: 12px 0 12px 20px;
 	}
 
@@ -3224,4 +3224,67 @@ footer.entry-meta {
 	.comment-reply-login {
 		color: #333;
 	}
+}
+
+/*GATS Stuff*/
+body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #333;
+	background-color: #ccc;
+	margin:0;
+}
+.TopBannerWrapper {background: #ff9933;height:5px;}
+.MiddleBannerWrapper {height:104px;}
+.LowerBannerWrapper {background:#138808;height:95px;}
+.NavigationWrapper {background:#2b2f3a;}
+.BannerLevel, .ContentWrapper {background:#ffffff;}
+.TopBannerContainer ,.MiddleBannerContainer, .LowerBannerContainer, .NavigationContainer,.ContentContainer,.PhotoContainer {width:1000px;margin:auto;}
+.ContentContainer {padding: 10px 0;}
+.GATSLogo {float:left;width:auto;}
+.GATSNameSection {float:left;width:50%;text-align:center;padding:5px 0 0 150px;color:#000;width:auto;}
+.GATSTamil {font-size: 20px;color: #138808;font-weight: bold;}
+.GATSEnglish {font-weight:bold;font-size:25px;line-height:20px;}
+.TitleContent {float:left;padding:15px;font-size:18px;line-height:20px;color:#777;}
+.banner-link-container {float:right;width:auto;}
+.banner-link-container li {list-style:none;float:left;padding:0 10px;border-right:solid 1px #000;color:#000}
+.banner-link-container li  a {color:#000;font-weight:bold}
+.top-menu-links {margin:5px;height:auto;}
+.lastChild {border-right:none;} 
+.LowerBannerContainer {text-align:center;}
+.FooterLinks {margin: auto; width: 1000px;text-align:center;}
+.FooterLinks ul {list-style:none; }
+.FooterLinks ul  li {float:left;padding:0 10px;border-right: solid 1px #726c6c;}
+
+.no-border li {border:none;margin-top:5px;}
+
+.Level1 {border:solid 1px #cccccc;}
+.MenuLinks li {min-width:100px;}
+
+/*navbar override*/
+.navbar {background:#000;min-height:auto;margin-top:5px;}
+.nav-menu li {border-right:solid 1px #fff;}
+.nav-menu li a {color:#fff;}
+.nav-menu .nav-menu .current-menu-item > a {background:#ff9933;font-weight:bold;}
+.main-navigation {margin: 0 0 0 0;padding-left:170px;}
+
+/*Sidebar Fix*/
+#main {
+	overflow: hidden; /* needed to stretch parent container since children are floated */
+}
+
+#primary.content-area {
+	width: 68%;
+	float: left;
+}
+
+.site-main .sidebar-container {
+	position: static;
+	float: right;
+	width: 30%;
+	height: auto;
+}
+
+.sidebar .entry-header, .sidebar .entry-content, .sidebar .entry-summary, .sidebar .entry-meta {
+	padding: 0;
 }
