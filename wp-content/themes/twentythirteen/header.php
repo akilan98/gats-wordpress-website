@@ -35,7 +35,7 @@
 	<div id="page" class="hfeed site">
 		<header id="masthead" class="" role="banner">
 			<div id="header-container" class="container-fluid">
-				<div class="row">
+				<div class="row" style="margin-right:0">
 					<div id="name-logo" class=col-md-8>
 						<div class="GATSLogo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="/images/logo.jpg" border="0"></a></div>
 						<div class="GATSNameSection">
@@ -59,13 +59,13 @@
 							</ul>
 					</div>
 				</div>
-				<nav id="navbar" class="navbar">
-					<div id="site-navigation" class="navigation main-navigation" role="navigation">
-						<button class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></button>
-						<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-						<div><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu',  'menu_id' => 'primary-menu' ) ); ?></div>
-					</div><!-- #site-navigation -->
-				</nav><!-- #navbar -->
 			</div>
+			<nav id="navbar" class="navbar">
+				<div id="site-navigation" class="navigation main-navigation" role="navigation">
+					<button class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></button>
+					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+					<div><?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu',  'menu_id' => 'primary-menu' ) ); ?></div>
+				</div><!-- #site-navigation -->
+			</nav><!-- #navbar -->
 		</header><!-- #masthead -->
 		<div id="main" class="site-main">
