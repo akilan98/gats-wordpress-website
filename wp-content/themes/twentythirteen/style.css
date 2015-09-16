@@ -3177,9 +3177,12 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .Level1 {border:solid 1px #cccccc;}
 .MenuLinks li {min-width:100px;}
 
+.picture-roll {width:auto;height:150px;}
+.picture-roll img {width:auto;height:150px;overflow:hidden;}
+
 /*Override*/
 .main-navigation {padding-left:100px;}
-.site-main {padding-left:100px;}
+.site-main {padding-left:100px;padding-right:100px;}
 /*Bootstrap Overrides*/
 #name-logo {height:auto;}
 #header-container {padding-right: 0;padding-left: 100px;}
@@ -3205,7 +3208,7 @@ body {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .GATSLogo {display:none;}
 }
 @media (max-width:881px) {
-.site-main {padding-left:0;}
+.site-main {padding-left:0;padding-right:0;}
 .menu-toggle {
 	cursor: pointer;
 	display: inline-block;
@@ -3310,24 +3313,14 @@ div.nav-menu > ul {
 }
 
 .widget-area {
-	margin-right:45px;
+	width:600px;
 }
 
-/*Vertical Carousel Hack*/
-.carousel.vertical .carousel-inner {
-  height: 100%;
+.widget {
+	padding:0;
 }
-.carousel.vertical .item {
-  -webkit-transition: 0.6s ease-in-out top;
-  -moz-transition:    0.6s ease-in-out top;
-  -ms-transition:     0.6s ease-in-out top;
-  -o-transition:      0.6s ease-in-out top;
-  left:               0;
+
+.ngg-slideshow {
+	width:300px;
+	height:450px;
 }
-.carousel.vertical .active,
-.carousel.vertical .next.left,
-.carousel.vertical .prev.right    { top:     0; }
-.carousel.vertical .next,
-.carousel.vertical .active.right  { top:  100%; }
-.carousel.vertical .prev,
-.carousel.vertical .active.left   { top: -100%; }

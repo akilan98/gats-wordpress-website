@@ -25,6 +25,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css">
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
@@ -69,3 +70,4 @@
 			</nav><!-- #navbar -->
 		</header><!-- #masthead -->
 		<div id="main" class="site-main">
+		<div class="picture-roll"><?php echo do_shortcode('[owl-carousel category="picture-roll" items="5" autoPlay="true"]'); ?></div>
